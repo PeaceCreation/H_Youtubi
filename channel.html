@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Youtuby Academy</title>
+    <!--  Font Awsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/channel.css">
+    <!--  StyleSheet -->
+</head>
+<body class="mt-5">
+    <div id="top-menu">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top rtl py-3">
+            <i class="fas fa-bars fa-2x" id="toggler"></i>
+              <b> <a class="navbar-brand px-3" href="index.html">
+                <span class="video-icon"> <i class="fas fa-play-circle"></i> </span>
+                Youtuby
+              </a></b>
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mx-lg-auto">
+                  <li class="nav-item active ">
+                    <a class="nav-link ps-2" href="#">Videos </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Upload Recently</a>
+                  </li>
+             
+                  <li class="nav-item">
+                    <a class="nav-link " href="logo.html" tabindex="-1" aria-disabled="true">Views </a>
+                  </li>
+                </ul>
+                <div class="form-inline my-2 my-lg-0 d-flex">
+                  <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button onclick="location.href='search.html';" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </div>
+              </div>
+                <i class="fas fa-search mx-4 search-icon"></i>
+                <button  class="btn btn-danger ms-2" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#loginModel"    id="exampleModalLabel"> Login </button>
+
+            </nav>
+            <input type="search" name="" id="" class="form-control search-input" placeholder="Search for">
+            <!-- Modal -->
+            <div class="modal fade" id="loginModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">LogIn</h5>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="email" class="col-form-label"> Email:</label>
+                        <input type="text" class="form-control" id="email">
+                      </div>
+                      <div class="form-group">
+                        <label for="password" class="col-form-label">Password:</label>
+                        <input type="password" class="form-control" id="password">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn btn-info" href=""> Forgote your Password</a>
+                    <a href="" class="mx-auto btn btn-warning"> Create an account</a>
+                    <button type="button" class="btn btn-primary"> Enter</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div id="wrap">
+                  <div class="sidebar py-4">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item active"> <i class="fas fa-home"></i> Home </li>
+                          <li class="list-group-item "> <i class="fas fa-users"></i> People </li>
+                          <li class="list-group-item "> <i class="fas fa-film "></i> Films </li>
+                          <li class="list-group-item "> <i class="fas fa-camera"></i> Camera </li>
+                          <li class="list-group-item "> <i class="fas fa-plus-square"></i> Square </li>
+                          <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                          <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                          <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                          <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                          <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                          <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>     
+                      </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="channel-page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="banner position-relative">
+                    <img class="img-fluid" src="img/h-channel.jpg" alt="h-channel">
+                    <div class="social-media position-absolute bg-secondary py-2 mx-3" style="bottom:18px; left:20px;">
+                        <a href="#" class="text-white" title="Hsoub Academy">
+                            <img src="img/icons/hsoub.png" alt="">
+                            Hsoub Academy
+                        </a>
+                        <a href="#" title="Fllow us on Twitter">
+                            <img src="img/icons/twitter.png" alt="">
+                        </a>
+                        <a href="#" title="Fllow us on FaceBook">
+                            <img src="img/icons/facebook.png" alt="">
+                        </a>
+                        <a href="#" title="Hsoub Academy">
+                            <img src="img/icons/hsoub-web.png" alt="">
+                        </a>
+                    </div>
+                    <div class="follow position-absolute" style="bottom:18px; right:18px;">
+                        <button class="btn btn-info"> 2650 Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <nav class="navbar  navbar-expand-lg navbar-light bg-light  w-100">
+                        <ul class="navbar-nav mx-auto ">
+                          <li class="nav-item active m-1">
+                            <a class="nav-link" href="#">Home  </a>
+                          </li>
+                          <li class="nav-item m-1">
+                            <a class="nav-link" href="#">Videos </a>
+                          </li>
+                          <li class="nav-item m-1">
+                            <a class="nav-link" href="#">PlayList</a>
+                          </li>
+                          <li class="nav-item m-1">
+                            <a class="nav-link" href="#">Channel</a>
+                          </li>
+                          <li class="nav-item m-1">
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Debat</a>
+                          </li>
+                          <li class="nav-item m-1">
+                            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">About Us</a>
+                          </li>
+                        </ul>
+                    </nav>
+            </div>
+            <div class="video-section bg-white p-2 mt-3">
+                <div class="card border-0">
+                    <div class="row">
+                            <div class="col-md-6">
+                              <video src="video/hsoub.mp4" controls  poster="img/poster.png" class="w-100">
+                                <source src="video/hsoub.mp4" type="video/webm"> 
+                                  <source src="video/hsoub.mp4" type="video/mp4"> 
+                              </video>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-block">
+                                    <a href="wtahc.html">
+                                        <h4>How To use Dev Tools in Google Chroms</h4>
+                                    </a>
+                                    <p class="card-text lead">
+                                        Dev Tools in Google Chrome in a Tool that Help Devlepper to  make things more easier,
+                                        by selecting Elements and Can also Be used to write  javascript code in console.
+                                    </p>
+                                    <small class="text-muted">
+                                        <i class="fas fa-film"></i><span> 2M Views</span>
+                                        <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                                    </small>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="latest-download">
+              <div class="container">
+                <h2 class="py-5"> Last Uploaded  Video</h2>
+                  <div class="row">
+                    <div class="col-sm-6 col-md-3 clo-lg-4">
+                      <div class="card mb-4">
+                        <div class="card-icons">
+                          <a href="watch.html">
+                            <img src="img/thumbnail/app.jpg" class="card-img-top" alt="card img">
+                            <time datetime=""> 20:09</time>
+                            <i class="fas fa-play fa-2x"></i>
+                        </div>
+                          <div class="card-body p-0">
+                            <p class="card-title">Mobile application</p>
+                          </div>
+                       </a>
+                        <div class="card-footer">
+                          <span class="d-block">
+                            <i class="fas fa-film"></i><span> 3K Views</span>
+                          </span>
+                            <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                        </div>
+                        <a href="channel.html" class="channel-img">
+                            <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                            <span class="card-text">  Hsoub Academy</span>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 clo-lg-4">
+                      <div class="card mb-4">
+                        <div class="card-icons">
+                          <a href="watch.html">
+                            <img src="img/thumbnail/devtools.jpg" class="card-img-top" alt="card img">
+                            <time datetime=""> 08:10</time>
+                            <i class="fas fa-play fa-2x"></i>
+                        </div>
+                          <div class="card-body p-0">
+                            <p class="card-title"> Be More PRoductive With Dev Tools</p>
+                          </div>
+                       </a>
+                        <div class="card-footer">
+                          <span class="d-block">
+                            <i class="fas fa-film"></i><span> 3K Views</span>
+                          </span>
+                            <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                        </div>
+                        <a href="channel.html" class="channel-img">
+                            <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                            <span class="card-text">  Hsoub Academy</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 clo-lg-4">
+                      <div class="card mb-4">
+                        <div class="card-icons">
+                          <a href="watch.html">
+                            <img src="img/thumbnail/khamsat2.jpg" class="card-img-top" alt="card img">
+                            <time datetime=""> 30:09</time>
+                            <i class="fas fa-play fa-2x"></i>
+                        </div>
+                          <div class="card-body p-0">
+                            <p class="card-title">Start Freelancing </p>
+                          </div>
+                       </a>
+                        <div class="card-footer">
+                          <span class="d-block">
+                            <i class="fas fa-film"></i><span> 3K Views</span>
+                          </span>
+                            <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                        </div>
+                        <a href="channel.html" class="channel-img">
+                            <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                            <span class="card-text">  Hsoub Academy</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 clo-lg-4">
+                      <div class="card mb-4">
+                        <a href="watch.html">
+                          <div class="card-icons">
+                            <img src="img/thumbnail/database.jpg" class="card-img-top" alt="card img">
+                            <time datetime=""> 16:09</time>
+                            <i class="fas fa-play fa-2x"></i>
+                          </div>
+                          <div class="card-body p-0">
+                            <p class="card-title">Database Structure</p>
+                          </div>
+                       </a>
+                        <div class="card-footer">
+                          <span class="d-block">
+                            <i class="fas fa-film"></i><span> 3K Views</span>
+                          </span>
+                            <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                        </div>
+                        <a href="channel.html" class="channel-img">
+                            <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                            <span class="card-text">  Hsoub Academy</span>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 clo-lg-4">
+                      <div class="card mb-4">
+                       <a href="watch.html">
+                        <div class="card-icons">
+                          <img src="img/thumbnail/frontend.jpg" class="card-img-top" alt="card img">
+                          <time datetime=""> 57:09</time>
+                          <i class="fas fa-play fa-2x"></i>
+                        </div>
+                          <div class="card-body p-0">
+                            <p class="card-title">You Guide To Manster Frontend Dev</p>
+                          </div>
+                       </a>
+                        <div class="card-footer">
+                          <span class="d-block">
+                            <i class="fas fa-film"></i><span> 3K Views</span>
+                          </span>
+                            <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                        </div>
+                        <a href="channel.html" class="channel-img">
+                            <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                            <span class="card-text">  Hsoub Academy</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 clo-lg-4">
+                      <div class="card mb-4">
+                       <a href="watch.html">
+                        <a href="watch.html">
+                          <div class="card-icons">
+                            <img src="img/thumbnail/php.jpg" class="card-img-top" alt="card img">
+                            <time datetime=""> 41:09</time>
+                            <i class="fas fa-play fa-2x"></i>
+                          </div>
+                          <div class="card-body p-0">
+                            <p class="card-title">Learn BackEnd With PHP</p>
+                          </div>
+                       </a>
+                        <div class="card-footer">
+                          <span class="d-block">
+                            <i class="fas fa-film"></i><span> 3K Views</span>
+                          </span>
+                            <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                        </div>
+                        <a href="channel.html" class="channel-img">
+                            <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                            <span class="card-text">  Hsoub Academy</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 clo-lg-4">
+                      <div class="card mb-4">
+                        <a href="watch.html">
+                          <div class="card-icons">
+                            <img src="img/thumbnail/cordova.jpg" class="card-img-top" alt="card img">
+                            <time datetime=""> 10:39</time>
+                            <i class="fas fa-play fa-2x"></i>
+                          </div>
+                          <div class="card-body p-0">
+                            <p class="card-title"> Introduction To Cordova</p>
+                          </div>
+                       </a>
+                        <div class="card-footer">
+                          <span class="d-block">
+                            <i class="fas fa-film"></i><span> 3K Views</span>
+                          </span>
+                            <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                        </div>
+                        <a href="channel.html" class="channel-img">
+                            <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                            <span class="card-text">  Hsoub Academy</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 clo-lg-4">
+                      <div class="card mb-4">
+                        <a href="watch.html">
+                          <div class="card-icons">
+                            <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card img">
+                            <time datetime=""> 19:09</time>
+                            <i class="fas fa-play fa-2x"></i>
+                          </div>
+                          <div class="card-body p-0">
+                            <p class="card-title">How To Build UI interface</p>
+                          </div>
+                       </a>
+                        <div class="card-footer">
+                          <span class="d-block">
+                            <i class="fas fa-film"></i><span> 3K Views</span>
+                          </span>
+                            <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                        </div>
+                        <a href="channel.html" class="channel-img">
+                            <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                            <span class="card-text">  Hsoub Academy</span>
+                        </a>
+                      </div>
+                    </div>
+
+                    
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Script -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

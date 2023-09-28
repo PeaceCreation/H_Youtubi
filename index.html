@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Youtuby</title>
+    <!--  Font Awsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--  StyleSheet -->
+</head>
+<body class="mt-5">
+  <div class="layer"></div>
+    <div id="top-menu">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top  py-3">
+              <i class="fas fa-bars fa-2x" id="toggler"></i>
+                <b> <a class="navbar-brand px-3" href="index.html">
+                  <span class="video-icon"> <i class="fas fa-play-circle"></i> </span>
+                  Youtuby
+                </a></b>
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button> -->
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                  <ul class="navbar-nav mx-lg-auto">
+                    <li class="nav-item mx-2 active  ">
+                      <a class="nav-link ps-2" href="#">Videos </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                      <a class="nav-link" href="#">Upload Recently</a>
+                    </li>
+               
+                    <li class="nav-item mx-2">
+                      <a class="nav-link " href="logo.html" tabindex="-1" aria-disabled="true">Views </a>
+                    </li>
+                  </ul>
+                  <div class="form-inline my-lg-0 d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button onclick="location.href='search.html';" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                  </div>
+                </div>
+                  <i class="fas fa-search mx-4 search-icon"></i>
+                  <button  class="btn btn-danger ms-2" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#loginModel"    id="exampleModalLabel"> Login </button>
+
+              </nav>
+              <input type="search" name="" id="" class="form-control search-input" placeholder="Search for">
+              <!-- Modal -->
+              <div class="modal fade" id="loginModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered ">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">LogIn</h5>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="email" class="col-form-label"> Email:</label>
+                          <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                          <label for="password" class="col-form-label">Password:</label>
+                          <input type="password" class="form-control" id="password">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <a class="btn btn-info" href=""> Forgote your Password</a>
+                      <a href="" class="mx-auto btn btn-warning"> Create an account</a>
+                      <button type="button" class="btn btn-primary"> Enter</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div id="wrap">
+                    <div class="sidebar py-4">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item active"> <i class="fas fa-home"></i> Home </li>
+                            <li class="list-group-item "> <i class="fas fa-users"></i> People </li>
+                            <li class="list-group-item "> <i class="fas fa-film "></i> Films </li>
+                            <li class="list-group-item "> <i class="fas fa-camera"></i> Camera </li>
+                            <li class="list-group-item "> <i class="fas fa-plus-square"></i> Square </li>
+                            <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                            <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                            <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                            <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                            <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                            <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>     
+                        </ul>
+                    </div>
+                  </div>
+              </div>
+                <div class="content">
+                    <h4 class="py-5"> Suggest Video</h4>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 clo-lg-4">
+                          <div class="card mb-4">
+                            <div class="card-icons">
+                              <a href="watch.html">
+                                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card img">
+                                <time datetime="">20:20</time>
+                                <i class="fas fa-play fa-2x"></i>
+                              </a>
+                            </div>
+                           <a href="watch.html">
+                             
+                              <div class="card-body p-0">
+                                <p class="card-title">How To Build UI interface</p>
+                              </div>
+                           </a>
+                            <div class="card-footer">
+                               <span class="d-block"> <i class="fas fa-film"></i><span> 3K Views</span></span>
+                                <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                            </div>
+                            <a href="cahnnel.html" class="channel-img">
+                                <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                <span class="card-text">  Hsoub Academy</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 clo-lg-4">
+                          <div class="card mb-4">
+                            <div class="card-icons">
+                              <a href="watch.html">
+                                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card img">
+                                <time datetime="">9:20</time>
+                                <i class="fas fa-play fa-2x"></i>
+                              </a>
+                            </div>
+                           <a href="watch.html">
+                              
+                              <div class="card-body p-0">
+                                <p class="card-title">Best ways to earn Money Online</p>
+                              </div>
+                           </a>
+                            <div class="card-footer">
+                                <span class="d-block"><i class="fas fa-film"></i><span> 100K Views</span></span>
+                                <i class="fas fa-clock"></i><span> More Than 5 Months</span>
+                            </div>
+                            <a href="cahnnel.html" class="channel-img">
+                                <img src="img/khamsat.jpg" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                <span class="card-text">  Khamsat Academy</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 clo-lg-4">
+                          <div class="card mb-4">
+                            <div class="card-icons">
+                              <a href="watch.html">
+                                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card img">
+                                <time datetime="">9:20</time>
+                                <i class="fas fa-play fa-2x"></i>
+                              </a>
+                            </div>
+                           <a href="watch.html">  
+                              <div class="card-body p-0">
+                                <p class="card-title">Remote Jobs in Arabic World</p>
+                              </div>
+                           </a>
+                            <div class="card-footer">
+                                <i class="fas fa-film"></i><span> 321K Views</span>
+                                <i class="fas fa-clock"></i><span> More Than 11 Months</span>
+                            </div>
+                            <a href="cahnnel.html" class="channel-img">
+                                <img src="img/mostaql.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                <span class="card-text">  Hsoub Academy</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 clo-lg-4">
+                          <div class="card mb-4">
+                            <div class="card-icons">
+                              <a href="watch.html">
+                                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card img">
+                                <time datetime="">9:20</time>
+                                <i class="fas fa-play fa-2x"></i>
+                              </a>
+                            </div>
+                           <a href="watch.html">
+                              
+                              <div class="card-body p-0">
+                                <p class="card-title">Find Best Freeelance Workers</p>
+                              </div>
+                           </a>
+                            <div class="card-footer">
+                                <i class="fas fa-film"></i><span> 7K Views</span>
+                                <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                            </div>
+                            <a href="channel.html" class="channel-img">
+                                <img src="img/mostaql.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                <span class="card-text">  Mostagl Academy</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 clo-lg-4">
+                          <div class="card mb-4">
+                            <div class="card-icons">
+                              <a href="watch.html">
+                                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card img">
+                                <time datetime="">9:20</time>
+                                <i class="fas fa-play fa-2x"></i>
+                              </a>
+                            </div>
+                           <a href="watch.html">
+                              <div class="card-body p-0">
+                                <p class="card-title">How To Select a Freelancer</p>
+                              </div>
+                           </a>
+                            <div class="card-footer">
+                                <i class="fas fa-film"></i><span> 1K Views</span>
+                                <i class="fas fa-clock"></i><span> More Than 7 Months</span>
+                            </div>
+                            <a href="channel.html" class="channel-img">
+                                <img src="img/mostaql.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                <span class="card-text">  Mostagl Academy</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 clo-lg-4">
+                          <div class="card mb-4">
+                            <div class="card-icons">
+                              <a href="watch.html">
+                                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card img">
+                                <time datetime="">9:20</time>
+                                <i class="fas fa-play fa-2x"></i>
+                              </a>
+                            </div>
+                           <a href="watch.html">
+                              <div class="card-body p-0">
+                                <p class="card-title">Online Course For Free in PHP</p>
+                              </div>
+                           </a>
+                            <div class="card-footer">
+                                <i class="fas fa-film"></i><span> 2M Views</span>
+                                <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                            </div>
+                            <a href="channel.html" class="channel-img">
+                                <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                <span class="card-text">  Hsoub Academy</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 clo-lg-4">
+                          <div class="card mb-4">
+                            <div class="card-icons">
+                              <a href="watch.html">
+                                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card img">
+                                <time datetime="">9:20</time>
+                                <i class="fas fa-play fa-2x"></i>
+                              </a>
+                            </div>
+                           <a href="watch.html">
+                              <div class="card-body p-0">
+                                <p class="card-title">Online Course For Free in Ruby</p>
+                              </div>
+                           </a>
+                            <div class="card-footer">
+                                <i class="fas fa-film"></i><span> 3.4M Views</span>
+                                <i class="fas fa-clock"></i><span> More Than 10 Months</span>
+                            </div>
+                            <a href="channel.html" class="channel-img">
+                                <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                <span class="card-text">  Hsoub Academy</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 clo-lg-4">
+                          <div class="card mb-4">
+                            <div class="card-icons">
+                              <a href="watch.html">
+                                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card img">
+                                <time datetime="">9:20</time>
+                                <i class="fas fa-play fa-2x"></i>
+                              </a>
+                            </div>
+                           <a href="watch.html">
+                              <div class="card-body p-0">
+                                <p class="card-title">Secret to Start Freelancing</p>
+                              </div>
+                           </a>
+                            <div class="card-footer">
+                               <span class="d-block"> <i class="fas fa-film"></i><span> 3K Views</span></span>
+                                <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                            </div>
+                            <a href="channel.html" class="channel-img">
+                                <img src="img/khamsat.jpg" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                <span class="card-text">  Khamsat Academy</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 clo-lg-4">
+                          <div class="card mb-4">
+                            <div class="card-icons">
+                              <a href="watch.html">
+                                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card img">
+                                <time datetime="">9:20</time>
+                                <i class="fas fa-play fa-2x"></i>
+                              </a>
+                            </div>
+                           <a href="watch.html">
+                              <div class="card-body p-0">
+                                <p class="card-title">How To To Apply For Freelancing jobs</p>
+                              </div>
+                           </a>
+                            <div class="card-footer">
+                                <i class="fas fa-film"></i><span> 32K Views</span>
+                                <i class="fas fa-clock"></i><span> More Than 3 Months</span>
+                            </div>
+                            <a href="channel.html" class="channel-img">
+                                <img src="img/khamsat.jpg" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                <span class="card-text">  Khamsat Academy</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 clo-lg-4">
+                          <div class="card mb-4">
+                            <div class="card-icons">
+                              <a href="watch.html">
+                                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card img">
+                                <time datetime="">9:20</time>
+                                <i class="fas fa-play fa-2x"></i>
+                              </a>
+                            </div>
+                           <a href="watch.html">
+                              <div class="card-body p-0">
+                                <p class="card-title">How To Become a Front End Senior </p>
+                              </div>
+                           </a>
+                            <div class="card-footer">
+                                <i class="fas fa-film"></i><span> 5M Views</span>
+                                <i class="fas fa-clock"></i><span> More Than 2 Years</span>
+                            </div>
+                            <a href="channel.html" class="channel-img">
+                                <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                <span class="card-text">  Hsoub Academy</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 clo-lg-4">
+                          <div class="card mb-4">
+                            <div class="card-icons">
+                              <a href="watch.html">
+                                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card img">
+                                <time datetime="">9:20</time>
+                                <i class="fas fa-play fa-2x"></i>
+                              </a>
+                            </div>
+                           <a href="watch.html">
+                              <div class="card-body p-0">
+                                <p class="card-title">How To Build UI interface</p>
+                              </div>
+                           </a>
+                            <div class="card-footer">
+                               <span class="d-block"> <i class="fas fa-film"></i><span> 3K Views</span></span>
+                                <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                            </div>
+                            <a href="channel.html" class="channel-img">
+                                <img src="img/mostaql.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                <span class="card-text">  Hsoub Academy</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 clo-lg-4">
+                          <div class="card mb-4">
+                            <div class="card-icons">
+                              <a href="watch.html">
+                                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card img">
+                                <time datetime="">9:20</time>
+                                <i class="fas fa-play fa-2x"></i>
+                              </a>
+                            </div>
+                           <a href="watch.html">
+                              <div class="card-body p-0">
+                                <p class="card-title">Online Course in Version Controls</p>
+                              </div>
+                           </a>
+                            <div class="card-footer">
+                               <span class="d-block"> <i class="fas fa-film"></i><span> 3K Views</span></span>
+                                <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                            </div>
+                            <a href="channel.html" class="channel-img">
+                                <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                <span class="card-text">  Hsoub Academy</span>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                 </div>
+        </div>
+    </div>
+    <!-- JS Script -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.channel-page .video-section .card:hover{
+    transform: translateY(0%);
+}
+.navbar-nav{
+    display: -webkit-box;
+}
+.navbar-nav 

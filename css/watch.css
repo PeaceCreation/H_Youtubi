@@ -1,0 +1,41 @@
+.card:hover{
+    transform: translateY(0%);
+}
+
+.watch-page .watch-icons{
+    position: absolute;
+    bottom: 5px;
+    right:20px;
+}
+
+.watch-icons i:hover{
+    cursor: pointer;
+}
+.watch-page #more{
+    display: none;
+}
+.card-inner{
+    /* display: none; */
+}
+.head{
+    position: absolute;
+    bottom: 1px;
+    left: 7px;
+    color: #fff;
+    background-color: #000;
+    padding: 0 4px;
+}
+time{
+    position: absolute;
+    bottom: 30px;
+    left: 7px;
+    color: #fff;
+    background-color: #000;
+    padding: 0 4px;
+}
+
+@media(max-width:767px){
+    .img-slider  img{
+        width:15% !important;
+    }
+}

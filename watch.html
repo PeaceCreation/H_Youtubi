@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Youtuby</title>
+    <!--  Font Awsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/watch.css">
+    <!--  StyleSheet -->
+</head>
+<body class="mt-5">
+    <div class="layer"></div>
+    <div id="top-menu">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top rtl py-3">
+                <i class="fas fa-bars fa-2x" id="toggler"></i>
+                  <b> <a class="navbar-brand px-3" href="index.html">
+                    <span class="video-icon"> <i class="fas fa-play-circle"></i> </span>
+                    Youtuby
+                  </a></b>
+                  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button> -->
+                
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+                    <ul class="navbar-nav mx-lg-auto">
+                      <li class="nav-item mx-2 active ">
+                        <a class="nav-link ps-2" href="#">Videos </a>
+                      </li>
+                      <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Upload Recently</a>
+                      </li>
+                 
+                      <li class="nav-item mx-2">
+                        <a class="nav-link " href="logo.html" tabindex="-1" aria-disabled="true">Views </a>
+                      </li>
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0 d-flex">
+                      <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button onclick="location.href='search.html';" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                    </div>
+                  </div>
+                    <i class="fas fa-search mx-4 search-icon"></i>
+                    <button  class="btn btn-danger ms-2" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#loginModel"    id="exampleModalLabel"> Login </button>
+  
+                </nav>
+                <input type="search" name="" id="" class="form-control search-input" placeholder="Search for">
+                <!-- Modal -->
+                <div class="modal fade" id="loginModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered ">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">LogIn</h5>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="email" class="col-form-label"> Email:</label>
+                            <input type="text" class="form-control" id="email">
+                          </div>
+                          <div class="form-group">
+                            <label for="password" class="col-form-label">Password:</label>
+                            <input type="password" class="form-control" id="password">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <a class="btn btn-info" href=""> Forgote your Password</a>
+                        <a href="" class="mx-auto btn btn-warning"> Create an account</a>
+                        <button type="button" class="btn btn-primary"> Enter</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div id="wrap">
+                      <div class="sidebar py-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item active"> <i class="fas fa-home"></i> Home </li>
+                              <li class="list-group-item "> <i class="fas fa-users"></i> People </li>
+                              <li class="list-group-item "> <i class="fas fa-film "></i> Films </li>
+                              <li class="list-group-item "> <i class="fas fa-camera"></i> Camera </li>
+                              <li class="list-group-item "> <i class="fas fa-plus-square"></i> Square </li>
+                              <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                              <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                              <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                              <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                              <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                              <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>     
+                          </ul>
+                      </div>
+                    </div>
+                </div>
+                <div class="watch-page pt-5">
+                    <div class="container-fluid">
+                        <div class="card border-0">
+                            <div class="row">
+                                    <div class="col-lg-7">
+                                      <video src="video/hsoub.mp4" controls  poster="img/poster.png" class="w-100">
+                                        <source src="video/hsoub.mp4" type="video/webm"> 
+                                          <source src="video/hsoub.mp4" type="video/mp4"> 
+                                      </video>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="card-block">
+                                            <small class="text-muted">
+                                                <i class="fas fa-film"></i><span> 2M Views</span>
+                                                <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                                                <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                                <span class="card-text">  Hsoub Academy</span>
+                                            </small>
+                                            <a href="watch.html">
+                                                <h4>How To use Dev Tools in Google Chroms</h4>
+                                            </a>
+                                            <p class="card-text lead">
+                                                Dev Tools in Google Chrome in a Tool that Help Devlepper to  make things more easier,
+                                                by selecting <span id="dots"> ...</span> <span id="more">
+                                                    Elements and Can also Be used to write  javascript code in console.
+                                                </span>
+                                            </p>
+                                            <div class="btns">
+                                                <button class="btn btn-primary mb-4" id="mybtn"> Show More ...</button>
+                                            </div>
+                                        </div>
+                                        <div class="watch-icons py-3">
+                                            <i class="fas fa-heart p-1 bg-secondary rounded-circle " title="Liked"></i>
+                                            <i class="fas fa-clock p-1 bg-secondary rounded-circle" title="Watch later"></i>
+                                            <i class="fas fa-share-square p-1 bg-secondary rounded-circle" title="Share it"></i>
+                                            <i class="fas fa-play-circle p-1 bg-secondary rounded-circle" title="Add To Playlist"></i>
+                                            <span class="ms-3"> Report</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-7">
+                                <div class="comments">
+                                    <div class="comments-details mb-3">
+                                        <span> Comments 4</span>
+                                        <span class="dropdown">
+                                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Order by
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                              <a class="dropdown-item" href="#">Date</a>
+                                              <a class="dropdown-item" href="#">New Comments</a>
+                                        
+                                            </div>
+                                          </span>
+                                    </div>
+                                    <div class="public-comments">
+                                        <div class="form-group">
+                                            <textarea class="form-control" 
+                                                placeholder="Add Your Comment..." 
+                                                id="exampleFormControlTextarea1" rows="4"></textarea>
+                                                <button type="submit" class="btn btn-info m-3">Comment</button>
+                                          </div>
+
+                                          <div class="card card-inner ">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="img-slider text-center">
+                                                            <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid w-50"/>
+                                                            <p class="text-secondary  reply-time"> 15 Minutes ago</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <p>
+                                                            <a href="#"><strong> Hsoub Academy</strong>
+                                                                <div class="comments-status ">
+                                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                                </div>
+                                                            </a>
+                                                        </p>
+                                                        <p> Welcome Mohamed You have been Complet the  Course successfully</p>
+                                                        <a class=" mt-3 mt-md-4 " href="#" >
+                                                            <h4 > Mohamed</h4>
+                                                        </a>
+                                                        <p>
+                                                            <a class="float-end btn text-white btn-info mt-4"> 
+                                                            <i class="fa fa-heart"></i> Liked</a>
+                                                            <a class="btn text-white btn-info me-2 mt-4 reply"> 
+                                                                <i class="fa fa-reply"></i> الردود
+                                                            </a>
+                                                        </p>
+                                                        <p>                               
+                                                       </p>
+                                                       <div class="clearfix"></div>
+                                                        <p class="replay"> Alot Of Thanks.</p>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                          <div class="card card-inner my-3">
+                                            <div class="card-body ">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="img-slider text-center">
+                                                            <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid w-50"/>
+                                                            <p class="text-secondary  reply-time"> 15 Minutes ago</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9 ">
+                                                        <p>
+                                                            <a href="#"><strong> Hsoub Academy</strong>
+                                                                <div class="comments-status ">
+                                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                                </div>
+                                                            </a>
+                                                        </p>
+                                                        <p> Welcome Mohamed You have been Complet the  Course successfully</p>
+                                                        <a class=" mt-3 mt-md-4" href="#">
+                                                            <h4 > Mohamed Sidi Yahya</h4>
+                                                        </a>
+                                                        <p>
+                                                            <a class="float-end btn text-white btn-info mt-4"> 
+                                                            <i class="fa fa-heart"></i> Liked</a>
+                                                            <a class="btn text-white btn-info me-2 mt-4 reply"> 
+                                                                <i class="fa fa-reply"></i> الردود
+                                                            </a>
+                                                        </p>
+                                                        <p>                               
+                                                       </p>
+                                                       <div class="clearfix"></div>
+                                                       <p class="replay"> Thank You For Everthing</p>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                          <div class="card card-inner my-3 ">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="img-slider text-center">
+                                                            <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid w-50"/>
+                                                            <p class="text-secondary  reply-time"> 15 Minutes ago</p>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <p>
+                                                            <a href="#"><strong> Hsoub Academy</strong>
+                                                                <div class="comments-status ">
+                                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                                    <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                                                                </div>
+                                                            </a>
+                                                        </p>
+                                                        <p> Welcome Dahe Khalid You have been Complet the  Course successfully</p>
+                                                        <a class=" mt-3 mt-md-4" href="#">
+                                                            <h4> Dahe Khalid</h4>
+                                                        </a>
+                                                        <p>
+                                                            <a class="float-end btn text-white btn-info mt-4"> 
+                                                            <i class="fa fa-heart"></i> Liked</a>
+                                                            <a class="btn text-white btn-info me-2 mt-4 reply"> 
+                                                                <i class="fa fa-reply"></i> الردود
+                                                            </a>
+                                                        </p>
+                                                        <p>                               
+                                                       </p>
+                                                       <div class="clearfix"></div>
+                                                       <p> Thank For Everthing I Will Be Always Greatfull for you</p>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <p> Suggest</p>
+                                <div class="card p-3 mb-4">
+                                    <div class="row">
+                                            <div class=" col-sm-5">
+                                             <div class="card-icons">
+                                                <img src="img/thumbnail/app.jpg" class="w-100" alt="">
+                                                <i class="fas fa-play"></i>
+                                                <time datetime="" class="head"> 12:13</time>
+                                             </div>
+                                            </div>
+                                            <div class="col-sm-7">
+                                                <div class="card-block">
+                                                    <a href="watch.html">
+                                                        <p>How To use Dev Tools in Google Chroms</p>
+                                                    </a>
+                                                    <small class="text-muted">
+                                                        <i class="fas fa-film"></i><span> 2M Views</span>
+                                                        <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                                        <span class="card-text">  Hsoub Academy</span>
+                                                    </small>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="card p-3 mb-4">
+                                    <div class="row">
+                                            <div class=" col-sm-5">
+                                                <div class="card-icons">
+                                                    <img src="img/thumbnail/frontend.jpg" class="w-100" alt="">
+                                                    <i class="fas fa-play"></i>
+                                                    <time datetime="" class="head"> 12:13</time>
+                                                 </div>
+                                            </div>
+                                            <div class="col-sm-7">
+                                                <div class="card-block">
+                                                    <a href="watch.html" class="mt-1">
+                                                        <p>Front End Developpers Requirements</p>
+                                                    </a>
+                                                    <small class="text-muted">
+                                                        <i class="fas fa-film"></i><span> 2M Views</span>
+                                                        <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                                        <span class="card-text">  Hsoub Academy</span>
+                                                    </small>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="card p-3 mb-4">
+                                    <div class="row">
+                                            <div class=" col-sm-5">
+                                                <div class="card-icons">
+                                                    <img src="img/thumbnail/cordova.jpg" class="w-100" alt="">                                                    
+                                                    <i class="fas fa-play"></i>
+                                                    <time datetime="">52:15</time>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-7">
+                                                <div class="card-block">
+                                                    <a href="watch.html" class="mt-1">
+                                                        <p> Be A mobile Game Developper with JS using Cordova</p>
+                                                    </a>
+                                                    <small class="text-muted">
+                                                        <i class="fas fa-film"></i><span> 2M Views</span>
+                                                        <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                                        <span class="card-text">  Hsoub Academy</span>
+                                                    </small>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="card p-3 mb-4">
+                                    <div class="row">
+                                            <div class=" col-sm-5">
+                                                <div class="card-icons">
+                                                    <img src="img/thumbnail/app.jpg" class="w-100"  alt="">
+                                                    <i class="fas fa-play"></i>
+                                                    <time datetime="">52:15</time>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-7">
+                                                <div class="card-block">
+                                                    <a href="watch.html" class="mt-1">
+                                                        <p>How To use Dev Tools in Google Chroms</p>
+                                                    </a>
+                                                    <small class="text-muted">
+                                                        <i class="fas fa-film"></i><span> 2M Views</span>
+                                                        <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                                        <span class="card-text">  Hsoub Academy</span>
+                                                    </small>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="card p-3 mb-4">
+                                    <div class="row">
+                                            <div class=" col-sm-5">
+                                                <div class="card-icons">
+                                                    <img src="img/thumbnail/database.jpg" class="w-100 h-100" alt="">                                                    
+                                                    <i class="fas fa-play"></i>
+                                                    <time datetime="">52:15</time>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-7">
+                                                <div class="card-block">
+                                                    <a href="watch.html" class="mt-1">
+                                                        <p> Manahe Use database Structure in lass than 3 Months</p>
+                                                    </a>
+                                                    <small class="text-muted">
+                                                        <i class="fas fa-film"></i><span> 2M Views</span>
+                                                        <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                                        <span class="card-text">  Hsoub Academy</span>
+                                                    </small>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="card p-3 mb-4">
+                                    <div class="row">
+                                            <div class=" col-sm-5">
+                                                <div class="card-icons">
+                                                    <img src="img/thumbnail/devtools.jpg" class="w-100 h-100" alt="">
+                                                    <i class="fas fa-plly"></i>
+                                                    <time datetime="" class="head">15:52</time>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-7">
+                                                <div class="card-block">
+                                                    <a href="watch.html" class="mt-1">
+                                                        <p>How To use Dev Tools in Google Chroms</p>
+                                                    </a>
+                                                    <small class="text-muted">
+                                                        <i class="fas fa-film"></i><span> 2M Views</span>
+                                                        <img src="img/khamsat.jpg" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                                        <span class="card-text">  Mostagl Academy</span>
+                                                    </small>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- JS Script -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/watch.js"></script>
+</body>
+</html>

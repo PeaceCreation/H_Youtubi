@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Youtuby</title>
+    <!--  Font Awsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/log.css">
+    <!--  StyleSheet -->
+</head>
+<body class="mt-5">
+    <div class="layer"></div>
+    <div id="top-menu">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top rtl py-3">
+                <i class="fas fa-bars fa-2x" id="toggler"></i>
+                  <b> <a class="navbar-brand px-3" href="index.html">
+                    <span class="video-icon"> <i class="fas fa-play-circle"></i> </span>
+                    Youtuby
+                  </a></b>
+                  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button> -->
+                
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+                    <ul class="navbar-nav mx-lg-auto">
+                      <li class="nav-item mx-2 active ">
+                        <a class="nav-link pe-2" href="#">Videos </a>
+                      </li>
+                      <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Upload Recently</a>
+                      </li>
+                 
+                      <li class="nav-item mx-2">
+                        <a class="nav-link " href="logo.html" tabindex="-1" aria-disabled="true">Views </a>
+                      </li>
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0 d-flex">
+                      <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button onclick="location.href='search.html';" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                    </div>
+                  </div>
+                    <i class="fas fa-search mx-4 search-icon"></i>
+                    <button  class="btn btn-danger ms-2" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#loginModel"    id="exampleModalLabel"> Login </button>
+  
+                </nav>
+                <input type="search" name="" id="" class="form-control search-input" placeholder="Search for">
+                <!-- Modal -->
+                <div class="modal fade" id="loginModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered ">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">LogIn</h5>
+                        <button  class="btn btn-danger ms-2" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#loginModel"    id="exampleModalLabel"> Close </button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="email" class="col-form-label"> Email:</label>
+                            <input type="text" class="form-control" id="email">
+                          </div>
+                          <div class="form-group">
+                            <label for="password" class="col-form-label">Password:</label>
+                            <input type="password" class="form-control" id="password">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <a class="btn btn-info" href=""> Forgote your Password</a>
+                        <a href="" class="mx-auto btn btn-warning"> Create an account</a>
+                        <button type="button" class="btn btn-primary"> Enter</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div id="wrap">
+                      <div class="sidebar py-4">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item active"> <i class="fas fa-home"></i> Home </li>
+                              <li class="list-group-item "> <i class="fas fa-users"></i> People </li>
+                              <li class="list-group-item "> <i class="fas fa-film "></i> Films </li>
+                              <li class="list-group-item "> <i class="fas fa-camera"></i> Camera </li>
+                              <li class="list-group-item "> <i class="fas fa-plus-square"></i> Square </li>
+                              <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                              <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                              <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                              <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                              <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>
+                              <li class="list-group-item "> <i class="fas fa-home"></i> Home </li>     
+                          </ul>
+                      </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="history-page pt-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 history-right-column">
+                    <input type="search" placeholder="Search date ..." id="" class="form-control mb-3 border-0">
+                    <hr>
+                    <label for="" class="my-4"> Type </label>
+                    <div class="list-group list-group-flush pe-0" id="list-tab" role="tablist">
+                      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Views</a>
+                      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Search</a>
+                      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Comeents</a>
+                      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                    </div>
+                    <label for=""> Date </label>
+                    <div class="list-group list-group-flush pe-0" id="list-tab" role="tablist">
+                      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">24 Hours ago</a>
+                      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">3 Days ago</a>
+                      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">a Week ago</a>
+                      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">a  Month ago</a>
+                    </div>
+                    
+
+
+                </div>
+                <div class="col-lg-9">
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <div class="card py-2 mb-3">
+                                <div class="card-horizontal d-md-flex d-block">
+                                    <div class="img-square-wrapper card-icons">
+                                        <a href="watch.html">
+                                            <img class="card-img-top" src="img/thumbnail/devtools.jpg" alt="Card image cap">
+                                            <time datetime=""> 10:04</time>
+                                            <i class="fas fa-play fa-2x"></i>
+                                            
+                                        </a>
+                                        <i class="fas fa-times remove"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="watch.html">
+                                            <h4>How To use Dev Tools in Google Chroms</h4>
+                                        </a>
+                                        <p class="card-text lead">
+                                            Dev Tools in Google Chrome in a Tool that Help Devlepper to  make things more easier,
+                                            by selecting Elements and Can also Be used to write  javascript code in console.
+                                        </p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-film"></i><span> 2M Views</span>
+                                            <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                                        </small>
+                                        <a href="channel.html" class="channel-img">
+                                            <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                            <span class="card-text">  Hsoub Academy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <div class="card py-2 mb-3">
+                                <div class="card-horizontal d-md-flex d-block">
+                                    <div class="img-square-wrapper card-icons">
+                                        <a href="watch.html">
+                                            <img class="card-img-top" src="img/thumbnail/devtools.jpg" alt="Card image cap">
+                                            <time datetime=""> 10:04</time>
+                                            <i class="fas fa-play fa-2x"></i>
+                                        </a>
+                                        <i class="fas fa-times remove"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="watch.html">
+                                            <h4>How To use Dev Tools in Google Chroms</h4>
+                                        </a>
+                                        <p class="card-text lead">
+                                            Dev Tools in Google Chrome in a Tool that Help Devlepper to  make things more easier,
+                                            by selecting Elements and Can also Be used to write  javascript code in console.
+                                        </p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-film"></i><span> 2M Views</span>
+                                            <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                                        </small>
+                                        <a href="channel.html" class="channel-img">
+                                            <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                            <span class="card-text">  Hsoub Academy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-12 ">
+                            <div class="card py-2 mb-3">
+                                <div class="card-horizontal d-md-flex d-block">
+                                    <div class="img-square-wrapper card-icons">
+                                        <a href="watch.html">
+                                            <img class="card-img-top" src="img/thumbnail/devtools.jpg" alt="Card image cap">
+                                            <time datetime=""> 10:04</time>
+                                            <i class="fas fa-play fa-2x"></i>
+                                            
+                                        </a>
+                                        <i class="fas fa-times remove"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="watch.html">
+                                            <h4>How To use Dev Tools in Google Chroms</h4>
+                                        </a>
+                                        <p class="card-text lead">
+                                            Dev Tools in Google Chrome in a Tool that Help Devlepper to  make things more easier,
+                                            by selecting Elements and Can also Be used to write  javascript code in console.
+                                        </p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-film"></i><span> 2M Views</span>
+                                            <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                                        </small>
+                                        <a href="channel.html" class="channel-img">
+                                            <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                            <span class="card-text">  Hsoub Academy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 ">
+                            <div class="card py-2 mb-3">
+                                <div class="card-horizontal d-md-flex d-block">
+                                    <div class="img-square-wrapper card-icons">
+                                        <a href="watch.html">
+                                            <img class="card-img-top" src="img/thumbnail/devtools.jpg" alt="Card image cap">
+                                            <time datetime=""> 10:04</time>
+                                            <i class="fas fa-play fa-2x"></i>
+                                            
+                                        </a>
+                                        <i class="fas fa-times remove"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="watch.html">
+                                            <h4>How To use Dev Tools in Google Chroms</h4>
+                                        </a>
+                                        <p class="card-text lead">
+                                            Dev Tools in Google Chrome in a Tool that Help Devlepper to  make things more easier,
+                                            by selecting Elements and Can also Be used to write  javascript code in console.
+                                        </p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-film"></i><span> 2M Views</span>
+                                            <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                                        </small>
+                                        <a href="channel.html" class="channel-img">
+                                            <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                            <span class="card-text">  Hsoub Academy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <div class="card py-2 mb-3">
+                                <div class="card-horizontal d-md-flex d-block">
+                                    <div class="img-square-wrapper card-icons">
+                                        <a href="watch.html">
+                                            <img class="card-img-top" src="img/thumbnail/devtools.jpg" alt="Card image cap">
+                                            <time datetime=""> 10:04</time>
+                                            <i class="fas fa-play fa-2x"></i>
+                                            
+                                        </a>
+                                        <i class="fas fa-times remove"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="watch.html">
+                                            <h4>How To use Dev Tools in Google Chroms</h4>
+                                        </a>
+                                        <p class="card-text lead">
+                                            Dev Tools in Google Chrome in a Tool that Help Devlepper to  make things more easier,
+                                            by selecting Elements and Can also Be used to write  javascript code in console.
+                                        </p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-film"></i><span> 2M Views</span>
+                                            <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                                        </small>
+                                        <a href="channel.html" class="channel-img">
+                                            <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                            <span class="card-text">  Hsoub Academy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <div class="card py-2 mb-3">
+                                <div class="card-horizontal d-md-flex d-block">
+                                    <div class="img-square-wrapper card-icons">
+                                        <a href="watch.html">
+                                            <img class="card-img-top" src="img/thumbnail/devtools.jpg" alt="Card image cap">
+                                            <time datetime=""> 10:04</time>
+                                            <i class="fas fa-play fa-2x"></i>
+                                            
+                                        </a>
+                                        <i class="fas fa-times remove"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="watch.html">
+                                            <h4>How To use Dev Tools in Google Chroms</h4>
+                                        </a>
+                                        <p class="card-text lead">
+                                            Dev Tools in Google Chrome in a Tool that Help Devlepper to  make things more easier,
+                                            by selecting Elements and Can also Be used to write  javascript code in console.
+                                        </p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-film"></i><span> 2M Views</span>
+                                            <i class="fas fa-clock"></i><span> More Than 9 Months</span>
+                                        </small>
+                                        <a href="channel.html" class="channel-img">
+                                            <img src="img/ch-logo.png" alt="channe-img" class="rounded-circle my-2 ms-3" width="30px;">
+                                            <span class="card-text">  Hsoub Academy</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS Script -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/log.js"></script>
+</body>
+</html>
