@@ -1,19 +1,29 @@
 // 
 
-$(document).ready(function(){
-    $(".nav-item").click(function(){
+console.log('mainjs')
+
+
+$(document).ready( function(){
+    console.log("jquery")
+})
+
+$(document).ready( function(){
+    $(".nav-item").click(function (){
         $(".nav-item").removeClass("active");
         $(this).addClass("active");
     });
-    $("#toggler").click(function(){
-       
-        $('#wrap').toggleClass("toggled")
-    });
-  
-    $(".search-icon").click(function(){
-        $(".search-input").slideToggle();
-        console.log("show");
-      });
+    $("#toggler").click( function(event){
+        $("#wrap").toggleClass("toggled");
 
-});
+        var right = $(".sidebar").css("right");
+    if(right == '0px'){
+        $(".sidebar").css({ 'right' : '-17rem'});
+        $(".layer").fadeOut();
+    }else{
+        $(".sidebar").css({ 'right' : '0rem'});
+        $(".layer").fadeIn();
+    }
+    })
 
+
+})

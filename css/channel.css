@@ -4,4 +4,11 @@
 .navbar-nav{
     display: -webkit-box;
 }
-.navbar-nav 
+.navbar-nav{
+
+}
+
+.close{
+    border:none;
+    border:1px solid  #bf40bf;
+}

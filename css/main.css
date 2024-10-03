@@ -1,3 +1,17 @@
+
+
+::root{
+    --main-color:#bf40bf;
+}
+
+@font-face {
+    font-family: "cairoFont";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+body {
+    font-family: "cairoFont", Arial, sans-serif;
+    background-color: #fafafa;
+}
 body{
     background-color: #fafafa;
 }
@@ -21,21 +35,22 @@ a{
 
 } */
 #top-menu .video-icon{
-    padding-top: 3px;
-    padding-bottom: 5px;
-    padding-right: 2px;
-    padding-left: 7px;
-    margin-right:10px;
-    background-color: #080;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    background-color:#bf40bf;;
     color: #fff;
-    border-radius: 25px;
+    border-radius: 4px;
 }
 
 .navbar .navbar-nav .active > .nav-link
 {
-    background-color: #080;
+  
     color:#fff;
     border-radius:2px;
+    background-color: #bf40bf;
 }
 textarea:focus,
 input.form-control:focus{
@@ -43,6 +58,11 @@ input.form-control:focus{
 }
 .navbar-nav .nav-link{
     padding-left: 10px !important;
+}
+li .nav-link:hover{
+    color: #fff !important;
+    border-radius: 2px;
+    background-color: #bf40bf;
 }
 .card .card-icons{
     position:relative;
@@ -65,7 +85,7 @@ time{
     position:absolute;
     top:43%;
     right:44%;
-    color:#2c3131c7;
+    color:var(--main-color);
     display: none;
 }
 .card:hover .fa-play{
@@ -78,16 +98,27 @@ time{
 .sidebar{
     position: fixed;
     z-index: 4;
-    
+    right: -20rem;
+    padding-top: 23px;
+    transition:  all 0.5s ease-in-out;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+.sidebar:hover{
+
 }
 .sidebar .list-group-item:hover{
+    background-color: #bf40bf !important;
+    border-color: #bf40bf !important;
     color:#fff;
-    background-color:#007bff;
 }
 
 #wrap.toggled .sidebar{
-    left:-10rem;
+    right:-3rem;
 }
+
+
 .sidebar::-webkit-scrollbar-thumb{
     background:rgb(179,179,179);
     width:8px;
@@ -98,7 +129,7 @@ time{
     width:100%;
     top:0;
     background-color: rgba(0,0,0 , 0.5);
-    z-index:4;
+    z-index:3;
     display: none;
 }
 .search-icon{
@@ -118,9 +149,21 @@ time{
     padding-bottom: 10px;
     padding-right: 14px;
     padding-left: 14px;
-    background-color:#007bff;
     color: #fff;
     border-radius: 3px;
+}
+.btn-outline-info:hover{
+    color: #fff !important;
+    background-color: #bf40bf !important;
+}
+.btn-outline-info-login{
+    color: #bf40bf;
+}
+.btn-outline-info-login:hover{
+    color: #bf40bf;
+}
+.btn-outline-info-login:focus{
+    outline: none !important;
 }
 .search-input{
     position:absolute;
@@ -139,4 +182,14 @@ time{
     .navbar .search-icon{
         display: inline;
     }
+}
+
+.close{
+    border:none;
+    border:1px solid  #bf40bf;
+}
+
+.list-group-item.active {
+    background-color: #bf40bf !important;
+    border-color: #bf40bf !important;
 }
